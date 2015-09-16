@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <title>File Uploader</title>
+</head>
+<body>
+
+<% if (simple) { %>
+
+  <h1>Upload a pre-determined file named "file.jpg".</h1>
+
+  <form method="post" action="<%= uri %>" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <input type="submit">
+  </form>
+
+<% } else if (complex) { %>
+
+  <h1>Upload a custom file to your bucket.</h1>
+
+  <form method="post" action="/upload" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <input type="submit">
+  </form>
+
+<% } else { %>
+
+  <ul>
+    <li><a href="/simple">Simple</a></li>
+    <li><a href="/complex">Complex</a></li>
+  </ul>
+
+<% } %>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "gcloud-1442438104",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {},
+  "keywords": [],
+  "author": "Stephen Sawchuk <sawchuk@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3",
+    "gcloud": "^0.21.0",
+    "lodash-express": "0.0.2",
+    "multer": "^1.0.3"
+  }
+}
