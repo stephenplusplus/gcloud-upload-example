@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <title>File Downloader</title>
+</head>
+<body>
+
+  <h1>File Downloader</h1>
+
+  <ul>
+
+  <% files.forEach(function(file) { %>
+    <li>
+      <strong><%= file.name %></strong>
+      <ul>
+        <li>
+          <a href="<%= file.signedUrl %>">Download from GCS</a>
+        </li>
+        <li>
+          <a href="/file/<%= file.name %>">Download on the fly</a>
+        </li>
+      </ul>
+    </li>
+  <% }); %>
+
+  </ul>
+
+</body>
+</html>

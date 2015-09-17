@@ -5,9 +5,11 @@
 </head>
 <body>
 
+  <h1>File Uploader</h1>
+
 <% if (simple) { %>
 
-  <h1>Upload a pre-determined file named "file.jpg".</h1>
+  <h2>Upload a pre-determined file named "file.jpg".</h2>
 
   <form method="post" action="<%= uri %>" enctype="multipart/form-data">
     <input type="file" name="file">
@@ -16,7 +18,7 @@
 
 <% } else if (complex) { %>
 
-  <h1>Upload a custom file to your bucket.</h1>
+  <h2>Upload a custom file to your bucket.</h2>
 
   <form method="post" action="/upload" enctype="multipart/form-data">
     <input type="file" name="file">
