@@ -62,7 +62,7 @@ var upload = multer({
       incomingFile.stream
         .pipe(file.createWriteStream({
           metadata: {
-            contentType: incomingFile.mimeType
+            contentType: incomingFile.mimetype
           }
         }))
         .on('error', next)
